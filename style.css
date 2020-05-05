@@ -1,8 +1,201 @@
 body {
+    background-image: url(/assets/img/orca-background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
     padding: 0;
-    margin:0;
+    margin: 0;
 }
-.header {
-    background-image: url(/assets/img/headerbackground.png);
+.raffle-list {
+    margin: 0 auto;
+    height: 90vh;
+    width: 90%;
     position: relative;
 }
+.container {
+    top: 50%;
+    margin:0 auto;
+    display: flex; /*lays out space among items in a container when size is unknown/dynamic
+    expands items to fill available free space/shrinks them to prevent overflow*/
+    flex-direction: column; /*top to bottom*/
+    flex-wrap: nowrap; /*wrap onto multiple lines top to bottom*/
+    /*flex-flow: column wrap; is shorthand for the above 2 lines*/
+    justify-content: center; /*y axis alignment - safe prevents overflow*/
+    align-items: center; /*x axis alignment*/
+    width: 250px;
+    height:500px;
+    background-color: rgba(0,0,0,.4);
+    top: 50%;
+    transform: translate(0,5%);
+    border: 3px solid rgb(1, 42, 58);
+    
+}
+.container button {
+    text-decoration: none;
+    color: grey;
+    margin: 5px;
+}
+.container button:hover {
+    background-color: grey;
+    border-radius: 10%;
+    color: white;
+}
+#raffle-option {
+    height: 70px;
+    background-color: rgb(218, 213, 213);
+    width: 150px;
+    margin: 10px;
+    display: flex;
+    border-radius: 5%;
+    border: 2px solid white;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+#raffle-option h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    transform: translate(0,-35%);
+    font-size: 1.3rem;
+}
+#raffle-option p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    transform: translate(0,-250%);
+    font-size: .8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.welcome-container {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    top: 38%;
+    position: relative;
+}
+.logo-container {
+    width: 100%;
+    height: 80px;
+    position: relative;
+    animation: fadein 2s;
+}
+.logo-container img {
+    padding: 0px;
+    margin: -5px;
+    height: 40px;
+}
+.raffle-container {
+    width: 100%;
+    height: 90px;
+    position: relative;
+    top: -40px;
+}
+.raffle {
+    height: 10px;
+    animation: fadein 2s;
+    -webkit-animation: fadein 2s; 
+    -moz-animation: fadein 2s; 
+    -ms-animation: fadein 2s;
+    -o-animation: fadein 2s; 
+    
+    
+}
+.logo-o {
+    
+}
+.logo-r {
+   
+    
+}
+.logo-c {
+    
+    
+}
+.logo-a {
+    
+    
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+.enter {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    top: 19%;
+}
+.enter-button {
+    height:100px;
+    width: 130px;
+    background-color: rgba(0,0,0,.4);
+    padding: 15px 30px 15px 30px;
+    decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+    font-weight: bolder;
+    
+    border-radius: 10%;
+    animation: fadein 2s;
+    text-decoration: none;
+    border: 2px solid #ffffff;
+}
+.enter-button:hover {
+    background-color: rgba(100,100,100,.4);
+    border: 2px solid #000000;
+    color: #000000;
+}*/
