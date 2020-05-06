@@ -3,31 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="style.css" type="text/css"/>
     <title>Orca Raffle</title>
 </head>
 <body>
     <div class="raffle-list">
         <div class="container">
-            <button href="#">
+            <button id="modalBtn">
                 <div class="raffle-1" id="raffle-option">
                     <h3>RAFFLE #1</h3>
                     <p>£2 Per Ticket</p>
                 </div>
             </button>
-            <button type="button" data-toggle="modal" data-target="#modal-1">
+            <button id="modalBtn">
                 <div class="raffle-2" id="raffle-option">
                     <h3>RAFFLE #2</h3>
                     <p>£5 Per Ticket</p>
                 </div>
             </button>
-            <button href="#">
+            <button id="modalBtn">
                 <div class="raffle-3" id="raffle-option">
                     <h3>RAFFLE #3</h3>
                     <p>£10 Per Ticket</p>
                 </div>
             </button>
-            <button href="#">
+            <button id="modalBtn">
                 <div class="raffle-4" id="raffle-option">
                     <h3>RAFFLE #4</h3>
                     <p>£20 Per Ticket</p>
@@ -36,8 +37,36 @@
         </div>
     </div>
    
+<!--Modal 1-->
+<div class="modal1" id="modal">
+    <div class="modal-content">
+        <span class="close" id="close">&times;</span>
+        <div class="modal-header">
+            <h1>RAFFLE #1</h1>
+            <p>APPLE BUNDLE - £2 Per Ticket</p>
+        </div>
+        <div class="apple-image">
+            <img src="/apple-bundle.PNG" alt="Apple Bundle">
+        </div>
+        <div class="bundle-info">
+            <ul class="apple-info">
+                <li>11″ iPad Pro with 128GB internal storage. 
+                    <p>Available in space grey or silver.</p></li>
+                <li>iPhone 11 with 64GB internal storage. 
+                    <p>Available in white, black, green, yellow, purple and red.</p></li>
+                <li>Apple Watch Series 5
+                    <p>Up to the value of £399.</p></li>
+                <li>AirPods with charging case.</li>
+            </ul>
+        </div>
+        <div class="buttons">
+            <button class="how-to-play">How do I play?</button>
+            <button class="played-before">I've played before</button>
+        </div>
+    </div>
+</div>
 
 
-
+<script src="/js.js"></script>
 </body>
 </html>
